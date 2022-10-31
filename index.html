@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bonus calculator</title>
+		<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+	</head>
+	<body class="w-screen h-screen flex items-center justify-center">
+		<div
+			class="max-w-[500px] border shadow-lg rounded-lg w-full px-6 py-10"
+		>
+			<h2 class="text-center font-semibold text-blue-600 text-3xl mb-6">
+				Calculate Bonus
+			</h2>
+			<div id="form-data" class="space-y-4">
+				<div class="flex flex-col space-y-1">
+					<label for="empType">Employee Type</label>
+					<select name="empType" class="rounded" id="empType">
+						<option value="">Please select ---</option>
+						<option value="permanent">Permanent</option>
+						<option value="contrurary">Contrurary</option>
+					</select>
+				</div>
+				<div class="flex flex-col space-y-1">
+					<label for="empCategory">Employee Category</label>
+					<div class="flex items-center space-x-6">
+						<div>
+							<input
+								type="radio"
+								id="type-A"
+								name="empCategory"
+								value="A"
+							/>
+							<label for="type-A">Type A</label>
+						</div>
+						<div>
+							<input
+								type="radio"
+								id="type-B"
+								name="empCategory"
+								value="B"
+							/>
+							<label for="type-B">Type B</label>
+						</div>
+						<div>
+							<input
+								type="radio"
+								id="type-C"
+								name="empCategory"
+								value="C"
+							/>
+							<label for="type-C">Type C</label>
+						</div>
+					</div>
+				</div>
+				<div class="flex flex-col space-y-1">
+					<label for="duration">Number of months</label>
+					<input
+						class="rounded"
+						type="number"
+						name="months"
+						placeholder="Number of months worked"
+						id="duration"
+					/>
+				</div>
+				<div class="flex flex-col space-y-1">
+					<label for="duration">Score</label>
+					<input
+						class="rounded"
+						type="number"
+						name="months"
+						placeholder="Employee's score"
+						id="score"
+					/>
+				</div>
+				<button
+					id="btn-submit"
+					class="w-full bg-blue-600 hover:bg-blue-800 durarion-150 py-2 rounded text-white font-semibold"
+				>
+					Submit
+				</button>
+			</div>
+		</div>
+		<script src="./script.js"></script>
+	</body>
+</html>
